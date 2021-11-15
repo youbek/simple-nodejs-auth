@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include("./partials/header.ejs"); %>
+  </head>
+  <body>
+    <div class="bg-light p-5 rounded-lg m-3">
+      <h1 class="display-4">Dashboard</h1>
+      <p class="lead">
+        Hello <%= user.name %>! This is simple app, that shows NodeJS
+        authentication
+      </p>
+      <hr class="my-4" />
+      <p>You are logged in!, your email <%= user.email %></p>
+      <a class="btn btn-danger" href="/logout" role="button">Logout</a>
+    </div>
+  </body>
+</html>
